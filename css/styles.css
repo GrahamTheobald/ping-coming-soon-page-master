@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&family=Open+Sans&display=swap");
+*, *::before, *::after {
+  font-family: "Libre Franklin", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-size: 16px;
+}
+
+img {
+  max-width: 100%;
+}
+
+.ping {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  gap: 1.5rem;
+  width: 375px;
+}
+.ping h1 {
+  font-size: 1.8rem;
+  font-weight: 300;
+  color: hsl(0deg, 0%, 59%);
+}
+.ping h1 span {
+  font-weight: 700;
+  color: black;
+}
+.ping .input {
+  margin: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 1rem;
+}
+.ping .input .email-input {
+  padding: 1rem;
+  width: 100%;
+  border: 1px solid hsl(223deg, 100%, 88%);
+  border-radius: 2rem;
+}
+.ping .input .email-input::-moz-placeholder {
+  color: hsl(0deg, 0%, 59%);
+  padding-left: 1rem;
+}
+.ping .input .email-input:-ms-input-placeholder {
+  color: hsl(0deg, 0%, 59%);
+  padding-left: 1rem;
+}
+.ping .input .email-input::placeholder {
+  color: hsl(0deg, 0%, 59%);
+  padding-left: 1rem;
+}
+.ping .input .submit {
+  padding: 1rem;
+  border-radius: 2rem;
+  outline: none;
+  border: none;
+  background-color: hsl(223deg, 87%, 63%);
+  color: white;
+  font-size: inherit;
+  font-weight: 600;
+  cursor: pointer;
+}
+.ping .error-message {
+  align-self: flex-start;
+  font-size: 0.8rem;
+  margin-top: -3rem;
+  margin-left: 1rem;
+  color: hsl(354deg, 100%, 66%);
+}
+.ping .logos {
+  margin-top: 3rem;
+  display: flex;
+  gap: 1rem;
+}
+.ping .logos div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2rem;
+  height: 2rem;
+  background-color: hsl(223deg, 87%, 63%);
+  border-radius: 50%;
+  border: 1px solid hsl(223deg, 100%, 88%);
+  overflow: hidden;
+}
+.ping .logos div img {
+  cursor: pointer;
+}
+.ping footer {
+  font-size: 0.8rem;
+  color: hsl(0deg, 0%, 59%);
+}
+
+.hidden {
+  display: none;
+}
+
+@media (min-width: 800px) {
+  .ping {
+    min-width: 550px;
+  }
+  .ping .input {
+    flex-direction: row;
+  }
+  .ping .input .email-input {
+    flex-basis: 70%;
+  }
+  .ping .input .submit {
+    flex-basis: 30%;
+  }
+}/*# sourceMappingURL=styles.css.map */
