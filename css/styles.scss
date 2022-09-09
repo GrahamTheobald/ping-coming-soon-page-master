@@ -54,6 +54,7 @@ img {
             width: 100%;
             border: 1px solid $PaleBlue;
             border-radius: 2rem;
+            text-indent: 1rem;
         }
         .email-input::placeholder {
             color: $Gray;
@@ -105,6 +106,11 @@ img {
 
 .hidden {
     display: none;
+}
+
+.error {
+    outline: solid $LightRed;
+    border: none !important;
 }
 
 @media (min-width: 800px) {

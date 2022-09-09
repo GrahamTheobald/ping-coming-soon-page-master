@@ -48,6 +48,7 @@ img {
   width: 100%;
   border: 1px solid hsl(223deg, 100%, 88%);
   border-radius: 2rem;
+  text-indent: 1rem;
 }
 .ping .input .email-input::-moz-placeholder {
   color: hsl(0deg, 0%, 59%);
@@ -105,6 +106,11 @@ img {
 
 .hidden {
   display: none;
+}
+
+.error {
+  outline: solid hsl(354deg, 100%, 66%);
+  border: none !important;
 }
 
 @media (min-width: 800px) {
